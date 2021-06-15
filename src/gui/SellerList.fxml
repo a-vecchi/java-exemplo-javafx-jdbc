@@ -11,7 +11,7 @@
 
 <VBox prefHeight="280.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerListController">
    <children>
-      <Label text="Cadastro de Vendedores">
+      <Label text="Cadastro de Vendedor">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

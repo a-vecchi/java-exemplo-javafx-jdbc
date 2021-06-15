@@ -23,7 +23,7 @@ import model.entities.Department;
 import model.exceptions.ValidationException;
 import model.services.DepartmentService;
 
-public class DepartmenteFormController implements Initializable {
+public class DepartmentFormController implements Initializable {
 
 	private Department entity;
 

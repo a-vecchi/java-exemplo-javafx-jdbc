@@ -97,7 +97,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			Pane pane = loader.load();
 
-			DepartmenteFormController controller = loader.getController();
+			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(obj);
 			controller.setDepartmentService(new DepartmentService());
 			controller.subscribeDataChangeListener(this);
@@ -111,6 +111,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.showAndWait();
 		} catch (IOException e) {
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Erro carregando tela", e.getMessage(), Alert.AlertType.ERROR);
 		}
 	}
